@@ -1,3 +1,6 @@
 [submodule "htdocs/sb-admin2"]
 	path = htdocs/sb-admin2
 	url = https://github.com/IronSummitMedia/startbootstrap-sb-admin-2.git
+[submodule "mvc"]
+	path = mvc
+	url = git@github.com:SectionInformatiqueRoc/mvc-core.git
