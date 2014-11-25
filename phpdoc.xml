@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <title>SIO CRM</title>
+  <parser>
+    <target>docs</target>
+  </parser>
+  <transformer>
+    <target>docs</target>
+  </transformer>
+  <files>
+    <directory>.</directory>
+    <ignore>index.php</ignore>
+  </files>
+</phpdoc>
