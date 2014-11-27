@@ -15,7 +15,7 @@ function  ajax(c, a, $contenant, params, initP) {
         type: 'POST',
         data: $.extend(params, {'c': c, 'a': a})
     }).done(function (data) {
-        if (data.substr(0, 15) == '<!DOCTYPE html>') {
+        if (data.substr(0, 15) === '<!DOCTYPE html>') {
              $(location).attr('href', '.');
         } else {
             var $bouton=$('<button>', { class: 'btn btn-default',text:'refresh'});
