@@ -8,7 +8,7 @@ function  ajax(c, a, $contenant, params, initP) {
     if (params === undefined) {
         params = {};
     }
-    //$contenant.html('<i class="fa fa-refresh fa-spin"></i>');
+    $contenant.html('<i class="fa fa-refresh fa-spin"></i>');
 
     $.ajax({
         url: '.',
