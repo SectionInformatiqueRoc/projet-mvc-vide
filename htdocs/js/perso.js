@@ -18,7 +18,12 @@ function  ajax(c, a, $contenant, params, initP) {
         if (data.substr(0, 15) == '<!DOCTYPE html>') {
              $(location).attr('href', '.');
         } else {
-            $contenant.html(data);
+            var $bouton=$('<button>', { class: 'btn btn-default',text:'refresh'});
+            $bouton.css({'position':'relative','top':10,'right':10});
+            $bouton.click(function(){
+                ajax(c, a, $contenant, params, initP);
+            });
+            $contenant.html(data).prepend($bouton);
         }
     });
 }
